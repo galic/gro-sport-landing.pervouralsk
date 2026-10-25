@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GroSport — лыжный клуб и марафонская команда в Екатеринбурге</title>
+  <meta name="description"
+    content="Спортивный клуб GroSport в Екатеринбурге: марафонская команда, лыжная школа для взрослых и детей, лыжный сервис, соревнования, спортивные сборы, прокат лыж и магазин. Запишитесь на тренировку прямо сейчас.">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="header__logo" aria-label="GroSport — на главную">
+        <img src="images/logo_ural_ski_club-black_bg.png" alt="Спортивный клуб GroSport" width="118" height="40">
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Основное меню">
+        <a href="#about" class="nav__link">О клубе</a>
+        <a href="#team" class="nav__link">Команда</a>
+        <a href="#school" class="nav__link">Лыжная школа</a>
+        <a href="#directions" class="nav__link">Направления</a>
+
+        <a href="#contacts" class="nav__link">Контакты</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="tel:+79221810881" class="header__phone">+7 (922) 181-08-81</a>
+        <a href="#form" class="btn btn--accent header__cta">Записаться</a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO SLIDER ================= -->
+    <section class="hero" id="hero">
+      <div class="hero__slider" id="heroSlider">
+
+        <div class="hero__slide active" style="background-image:url('images/hero1.png')">
+          <div class="hero__overlay"></div>
+          <div class="hero__content">
+            <span class="hero__eyebrow">Лыжное сообщество Екатеринбурга</span>
+            <h1 class="hero__title">GroSport —<br><span class="accent">спортивный клуб</span><br>для любителей лыж</h1>
+            <p class="hero__text">Лыжная школа для детей, лыжная школа для взрослых, марафонская команда, организация
+              соревнований и кэмпов, лыжный прокат и сервис, экипировочный магазин</p>
+            <div class="hero__cta">
+              <a href="#form" class="btn btn--accent btn--lg">Записаться на тренировку</a>
+              <!-- <a href="#directions" class="btn btn--ghost btn--lg">Наши направления</a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__slide" style="background-image:url('images/hero3-2.jpg')">
+          <div class="hero__overlay"></div>
+          <div class="hero__content">
+            <span class="hero__eyebrow">Лыжная школа GroSport</span>
+            <h2 class="hero__title">Научим кататься<br>на лыжах <span class="accent">взрослых и детей</span><br>с нуля
+            </h2>
+            <p class="hero__text">Тренеры от мастера спорта до МСМК. Собственная многофункциональная база на лучшей
+              лыжной трассе Екатеринбурга.</p>
+            <div class="hero__cta">
+              <a href="#school" class="btn btn--accent btn--lg">Выбрать абонемент</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__slide" style="background-image:url('images/hero2-1.jpg')">
+          <div class="hero__overlay"></div>
+          <div class="hero__content">
+            <span class="hero__eyebrow">Уральская Марафонская Команда</span>
+            <h2 class="hero__title">
+              Опытные лыжники<br>
+              от 1 разряда до МС<br>
+              <span class="accent">одна команда -</span> общая цель
+            </h2>
+            <p class="hero__text">
+              Участвуем в марафонах.<br>
+              Контракты для профессиональных спортсменов<br>
+              Лучшие результаты – денежные премии
+            </p>
+            <div class="hero__cta">
+              <a href="#team" class="btn btn--accent btn--lg">О команде</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__slide" style="background-image:url('images/hero4-1.jpg')">
+          <div class="hero__overlay"></div>
+          <div class="hero__content">
+            <span class="hero__eyebrow">Соревнования и сборы</span>
+            <h2 class="hero__title">Круглый год<br>в <span class="accent">движении:</span><br>тренировки и старты</h2>
+            <p class="hero__text">Организация тренировочных кэмпов в РФ и за пределами, организация гонок в течение
+              года.
+            </p>
+            <div class="hero__cta">
+              <a href="#events" class="btn btn--accent btn--lg">Смотреть события</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__slide" style="background-image:url('images/hero5-1.jpg')">
+          <div class="hero__overlay"></div>
+          <div class="hero__content">
+            <span class="hero__eyebrow">Лыжный сервис и прокат</span>
+            <h2 class="hero__title">Подготовим инвентарь<br>как <span class="accent">для марафона</span><br>так и для
+              прогулки</h2>
+            <p class="hero__text">Качественная подготовка лыж сервисменами и прокат инвентаря на время тренировок.</p>
+            <div class="hero__cta">
+              <a href="#directions" class="btn btn--accent btn--lg">Подробнее</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <button class="hero__arrow hero__arrow--prev" id="prevSlide" aria-label="Предыдущий слайд">&#10094;</button>
+      <button class="hero__arrow hero__arrow--next" id="nextSlide" aria-label="Следующий слайд">&#10095;</button>
+
+      <div class="hero__dots" id="heroDots"></div>
+    </section>
+
+    <!-- ================= PROMO STRIP ================= -->
+    <div class="promo">
+      <div class="container promo__inner">
+        <div class="promo__item">
+          <strong class="promo__value">Круглый<br>год</strong>
+          <span class="promo__text">тренировки зимой на лыжах, летом на лыжероллерах</span>
+        </div>
+        <div class="promo__divider"></div>
+        <div class="promo__item">
+          <strong class="promo__value">24/7</strong>
+          <span class="promo__text">собственная база с душевыми, тренажёрным залом, wax-комнатой и зоной отдыха</span>
+        </div>
+        <div class="promo__divider"></div>
+        <div class="promo__item">
+          <strong class="promo__value">Разные<br>уровни</strong>
+          <span class="promo__text">у нас тренируются как новички, так и мастера спорта</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= ABOUT / STATS ================= -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__content">
+            <span class="section__eyebrow">О клубе</span>
+            <h2 class="section__title">Спортивный клуб <span class="accent">GroSport</span></h2>
+            <p class="section__lead">GroSport — проект по продвижению спорта среди любителей. Наша цель — погрузить
+              спортсмена-любителя в атмосферу профессионального спорта.</p>
+            <!-- <ul class="about__list">
+              <li>2 филиала – Екатеринбург, Первоуральск</li>
+              <li>3 группы в лыжной школе у взрослых</li>
+              <li>3 группы в лыжной школе у детей</li>
+              <li>10 тренеров разной категории</li>
+              <li>Собственное мобильное приложение (ссылка на него)</li>
+              <li>1 место по УрФО и 5 место по РФ у марафонской команды в кубке 2019-2020</li>
+            </ul> -->
+            <a href="#form" class="btn btn--accent">Записаться на пробную тренировку</a>
+          </div>
+
+          <div class="about__stats">
+            <div class="stat-card">
+              <span class="stat-card__num">2</span>
+              <span class="stat-card__label">филиала – Екатеринбург, Первоуральск</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">3</span>
+              <span class="stat-card__label">группы в лыжной школе у взрослых</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">3</span>
+              <span class="stat-card__label">группы в лыжной школе у детей</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">10</span>
+              <span class="stat-card__label">тренеров разной категории</span>
+            </div>
+            <div class="stat-card">
+              <!-- <span class="stat-card__num">1</span> -->
+              <span class="stat-card__label">Собственное мобильное приложение</span>
+              <div class="stat-card__links">
+                <a href="https://appgallery.huawei.com/#/app/C112696549"><img src="./images/appstores/appgallery.png"
+                    alt="appgallery"></a>
+                <a href="https://apps.apple.com/ru/app/grosport/id6544794007"><img src="./images/appstores/appstore.png"
+                    alt="appstore"></a>
+                <a href="https://www.rustore.ru/catalog/app/com.mobifitness.grosport890799"><img
+                    src="./images/appstores/rustore.png" alt="rustore"></a>
+              </div>
+            </div>
+            <div class="stat-card">
+              <span class="stat-card__num">1<sup>-е</sup></span>
+              <span class="stat-card__label">место по УрФО и 5 место по РФ у марафонской команды в кубке
+                2019-2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DIRECTIONS ================= -->
+    <section class="section directions" id="directions">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow">Чем мы занимаемся</span>
+          <h2 class="section__title">Наши <span class="accent">направления</span></h2>
+        </div>
+
+        <div class="directions__grid">
+
+          <article class="direction-card">
+            <div class="direction-card__icon"><img src="./images/directions/logo-ski-school.png" alt="logo ski school">
+            </div>
+            <h3 class="direction-card__title">Лыжная школа</h3>
+            <p class="direction-card__text">Обучение взрослых и детей с нуля, групповая и персональная работа,
+              подготовка к соревнованиям и онлайн-ведение.</p>
+            <a href="#school" class="direction-card__link">Подробнее &rarr;</a>
+          </article>
+
+          <article class="direction-card">
+            <div class="direction-card__icon"><img src="./images/directions/logo-marathon-team.png"
+                alt="Марафонская команда"></div>
+            <h3 class="direction-card__title">Марафонская команда</h3>
+            <p class="direction-card__text">Уральская Марафонская Команда GroSport — сообщество любителей, идущих к
+              одной цели. Кубки Russialoppet и Worldloppet.</p>
+            <a href="#team" class="direction-card__link">Подробнее &rarr;</a>
+          </article>
+
+          <article class="direction-card">
+            <div class="direction-card__icon"><img src="./images/directions/logo-service.png" alt="Лыжный сервис"></div>
+            <h3 class="direction-card__title">Лыжный сервис</h3>
+            <p class="direction-card__text">Профессиональная подготовка инвентаря: смазка, структура, ремонт.
+              Собственная wax-комната на базе клуба.</p>
+            <a href="#form" class="direction-card__link">Заказать &rarr;</a>
+          </article>
+
+          <article class="direction-card">
+            <div class="direction-card__icon"><img src="./images/directions/logo-events.png" alt="Соревнования"></div>
+            <h3 class="direction-card__title">Соревнования</h3>
+            <p class="direction-card__text">Организуем старты для лыжников: марафоны, фестивали, детские гонки.
+              Ближайший — Роллерный Фестиваль 01–02.08.2026.</p>
+            <a href="#events" class="direction-card__link">Календарь &rarr;</a>
+          </article>
+
+          <article class="direction-card">
+            <div class="direction-card__icon"><img src="./images/directions/logo-camps.png" alt="Спортивные сборы">
+            </div>
+            <h3 class="direction-card__title">Спортивные сборы</h3>
+            <p class="direction-card__text">Круглогодичные сборы на разных площадках страны: тренировочный процесс,
+              восстановление и командная атмосфера.</p>
+            <a href="#form" class="direction-card__link">Узнать даты &rarr;</a>
+          </article>
+
+          <article class="direction-card">
+            <div class="direction-card__icon"><img src="images/prokat.png"
+                alt="Прокат лыж"></div>
+            <h3 class="direction-card__title">Прокат лыж</h3>
+            <p class="direction-card__text">Качественный инвентарь на время тренировки: лыжи, палки, ботинки. Не нужно
+              ничего покупать, чтобы начать.</p>
+            <a href="#form" class="direction-card__link">Забронировать &rarr;</a>
+          </article>
+
+          <article class="direction-card">
+            <div class="direction-card__icon"><img src="./images/directions/logo-service.png" alt="Магазин"></div>
+            <h3 class="direction-card__title">Магазин</h3>
+            <p class="direction-card__text">Спортивное питание Sponser, SIS, Isostar, смазки ZET, клубная экипировка и
+              аксессуары для циклических видов спорта.</p>
+            <a href="#form" class="direction-card__link">В магазин &rarr;</a>
+          </article>
+
+          <article class="direction-card direction-card--highlight">
+            <h3 class="direction-card__title">Запишитесь на пробную тренировку</h3>
+            <p class="direction-card__text">Знакомство со школой — групповая тренировка, на которой вы познакомитесь с
+              клубом и тренерами.</p>
+            <a href="#form" class="btn btn--accent btn--sm">Записаться</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TEAM ================= -->
+    <section class="section team" id="team">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow">Уральская Марафонская Команда</span>
+          <h2 class="section__title">Команда <span class="accent">GroSport</span></h2>
+        </div>
+
+        <div class="team__gallery">
+          <figure class="team__photo"><img src="images/team1.jpg" alt="Уральская Марафонская Команда GroSport"
+              loading="lazy">
+          </figure>
+          <figure class="team__photo"><img src="images/team2.jpg" alt="Тренировки команды GroSport" loading="lazy">
+          </figure>
+          <figure class="team__photo"><img src="images/team3.jpg" alt="Сборы марафонской команды" loading="lazy">
+          </figure>
+        </div>
+
+        <div class="team__text">
+          <p>Уральская Марафонская Команда GroSport — это сообщество любителей лыжного спорта, вместе идущих к одной
+            цели: улучшению личных и командных результатов и популяризации лыжного спорта и здорового образа жизни.
+            Благодаря идеальным условиям внутри команды прогресс неизбежен.</p>
+        </div>
+
+        <div class="team__benefits">
+          <div class="benefit">
+            <span class="benefit__num">01</span>
+            <h3 class="benefit__title">Тренировочный процесс</h3>
+            <p class="benefit__text">Командный чат с поддержкой 24/7, единый тренировочный план, составленный опытным тренером, совместные старты и выезды.</p>
+          </div>
+          <div class="benefit">
+            <span class="benefit__num">02</span>
+            <h3 class="benefit__title">Собственная база</h3>
+            <p class="benefit__text">База на территории УСБ «Динамо» с доступом 24/7: гардеробная, wax-комната, хранение
+              инвентаря, тренажёрный зал и зона отдыха.</p>
+          </div>
+          <div class="benefit">
+            <span class="benefit__num">03</span>
+            <h3 class="benefit__title">Атрибутика и спонсоры</h3>
+            <p class="benefit__text">Эксклюзивный дизайн командной формы по оптовым ценам и поддержка спонсоров: скидки
+              на смазки, питание и весь ассортимент клуба.</p>
+          </div>
+        </div>
+
+        <div class="team__cta">
+          <p>Для вступления в команду достаточно пробежать минимум 2 марафона серии Russialoppet в сезон и любить лыжные
+            гонки как мы.</p>
+          <a href="https://vk.com/grosport_skiteam" class="btn btn--accent" target="_blank" rel="noopener">Заполнить
+            анкету в VK</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SCHOOL / PRICES ================= -->
+    <section class="section school" id="school">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow">Лыжная школа в Екатеринбурге</span>
+          <h2 class="section__title">Абонементы <span class="accent">и цены</span></h2>
+        </div>
+
+        <p class="section__lead school__lead">Научим кататься на лыжах взрослых и детей с нуля, улучшим технику и
+          подготовим к соревнованиям. Тренеры — от МС до МСМК по лыжным гонкам.</p>
+
+        <div class="prices__grid">
+          <article class="price-card">
+            <img src="images/p-intro.jpg" data-summer="images/p-intro.jpg" data-winter="images/p-intro-winter.jpg" alt="Пробная тренировка" class="price-card__img" loading="lazy">
+            <h3 class="price-card__title">Пробная тренировка</h3>
+            <p class="price-card__text">Пробная групповая тренировка — познакомьтесь с клубом и тренерами.</p>
+            <div class="price-card__foot">
+              <span class="price-card__price">500 ₽</span>
+              <a href="#form" class="btn btn--accent btn--sm">Записаться</a>
+            </div>
+          </article>
+
+          <article class="price-card">
+            <img src="images/price-month.jpg" data-summer="images/price-month.jpg" data-winter="images/price-month-winter.jpg" alt="Абонемент на 1 месяц" class="price-card__img" loading="lazy">
+            <h3 class="price-card__title">Абонемент на 1 месяц</h3>
+            <p class="price-card__text">Для тех, кто готов усердно тренироваться.</p>
+            <div class="price-card__foot">
+              <span class="price-card__price">1 300 ₽</span>
+              <a href="#form" class="btn btn--accent btn--sm">Записаться</a>
+            </div>
+          </article>
+
+          <article class="price-card">
+            <img src="images/price-online.jpg" data-summer="images/price-online.jpg" data-winter="images/price-online-winter.jpg" alt="Тренировочный план online" class="price-card__img" loading="lazy">
+            <h3 class="price-card__title">Тренировочный план online</h3>
+            <p class="price-card__text">Персональные ведение спортсмена online, независимо от Вашего
+              местонахождения.Наши тренеры подготовят.</p>
+            <div class="price-card__foot">
+              <span class="price-card__price">5 000 ₽</span>
+              <a href="https://gro-sport.ru/ski-school" class="btn btn--accent btn--sm">Все абонементы</a>
+            </div>
+          </article>
+
+          <!-- <article class="price-card">
+            <img src="images/p-adult.jpg" alt="Абонемент для взрослых" class="price-card__img" loading="lazy">
+            <h3 class="price-card__title">Абонемент для взрослых</h3>
+            <p class="price-card__text">Оптимален для начинающих лыжников — регулярные групповые тренировки.</p>
+            <div class="price-card__foot">
+              <span class="price-card__price">9 000 ₽ / мес</span>
+              <a href="#form" class="btn btn--accent btn--sm">Выбрать</a>
+            </div>
+          </article>
+
+          <article class="price-card">
+            <img src="images/p-unlim.jpg" alt="Абонемент Безлимит" class="price-card__img" loading="lazy">
+            <h3 class="price-card__title">Абонемент «Безлимит»</h3>
+            <p class="price-card__text">Для тех, кто готов усердно тренироваться — без ограничений по числу занятий.</p>
+            <div class="price-card__foot">
+              <span class="price-card__price">12 000 ₽ / мес</span>
+              <a href="#form" class="btn btn--accent btn--sm">Выбрать</a>
+            </div>
+          </article>
+
+          <article class="price-card">
+            <img src="images/p-persona.jpg" alt="Персональный абонемент" class="price-card__img" loading="lazy">
+            <h3 class="price-card__title">Персональный абонемент</h3>
+            <p class="price-card__text">Личное ведение спортсмена — всё внимание тренера только вам.</p>
+            <div class="price-card__foot">
+              <span class="price-card__price">13 000 ₽ / мес</span>
+              <a href="#form" class="btn btn--accent btn--sm">Выбрать</a>
+            </div>
+          </article>
+
+          <article class="price-card">
+            <img src="images/p-family.jpg" alt="Абонемент для семьи" class="price-card__img" loading="lazy">
+            <h3 class="price-card__title">Семейный абонемент</h3>
+            <p class="price-card__text">Тренируйтесь вместе с ребёнком: пока он занимается — вы не ждёте без дела.</p>
+            <div class="price-card__foot">
+              <span class="price-card__price">12 000 ₽ / мес</span>
+              <a href="#form" class="btn btn--accent btn--sm">Выбрать</a>
+            </div>
+          </article>
+
+          <article class="price-card">
+            <img src="images/p-online.jpg" alt="Тренировочный план online" class="price-card__img" loading="lazy">
+            <h3 class="price-card__title">Тренировочный план online</h3>
+            <p class="price-card__text">Персональное ведение спортсмена онлайн — независимо от вашего местонахождения.
+            </p>
+            <div class="price-card__foot">
+              <span class="price-card__price">5 000 ₽ / мес</span>
+              <a href="#form" class="btn btn--accent btn--sm">Выбрать</a>
+            </div>
+          </article> -->
+        </div>
+
+        <a href="https://gro-sport.ru/ski-school" class="school__cta" target="_blank" rel="noopener">Посмотреть все абонементы</a>
+      </div>
+    </section>
+
+    <!-- ================= WHY ================= -->
+    <section class="section why">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow">Почему GroSport</span>
+          <h2 class="section__title">5 причин заниматься <span class="accent">с нами</span></h2>
+        </div>
+
+        <div class="why__grid">
+          <div class="why-card">
+            <div class="usp-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style="width: 100%; height: auto;">
+                <!-- Базовый цвет: #1E293B (Темный графит) | Акцент: #FF6B35 (Оранжевый) -->
+                <g stroke="#fece1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Кнопки секундомера -->
+                  <path d="M32 14V8M26 8h12M48 20l4-4M16 20l-4-4" />
+                  <!-- Корпус -->
+                  <circle cx="32" cy="36" r="22" />
+                </g>
+                <g stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- График прогресса внутри -->
+                  <path d="M20 38l7-9 6 7 11-12" />
+                  <!-- Стрелка графика -->
+                  <path d="M38 24h6v6" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="why-card__title">Профессиональный подход</h3>
+            <p class="why-card__text">Методики и тренировочные планы, выстроенные по стандартам профессионального
+              спорта.</p>
+          </div>
+          <div class="why-card">
+            <div class="usp-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style="width: 100%; height: auto;">
+                <g stroke="#fece1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Корпус свистка -->
+                  <circle cx="40" cy="42" r="14" />
+                  <!-- Мундштук -->
+                  <path d="M40 28v-8H26v8" />
+                  <path d="M26 20h14" />
+                  <!-- Отверстие для звука -->
+                  <path d="M54 42h6" />
+                </g>
+                <g stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Звуковые волны / динамика -->
+                  <path d="M18 34c-4 4-4 12 0 16" />
+                  <path d="M10 28c-6 8-6 20 0 28" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="why-card__title">Именитые тренеры</h3>
+            <p class="why-card__text">Тренеры от мастера спорта до МСМК по лыжным гонкам подберут программу под ваши
+              цели.</p>
+          </div>
+          <div class="why-card">
+            <div class="usp-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style="width: 100%; height: auto;">
+                <g stroke="#fece1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Ремешки -->
+                  <path d="M22 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8M22 52v8a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-8" />
+                  <!-- Корпус часов -->
+                  <rect x="16" y="20" width="32" height="32" rx="8" />
+                  <!-- Боковые кнопки -->
+                  <path d="M48 30h4M48 42h4" />
+                </g>
+                <g stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Пульс на экране -->
+                  <path d="M20 36h6l4-8 4 14 4-6h6" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="why-card__title">Индивидуальный подход</h3>
+            <p class="why-card__text">Вне зависимости от уровня подготовки результат виден уже с первых занятий.</p>
+          </div>
+          <div class="why-card">
+            <div class="usp-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style="width: 100%; height: auto;">
+                <g stroke="#fece1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Левая петля (Лыжня) -->
+                  <path d="M32 32C26 22 16 22 12 28s-2 14 6 14 12-6 14-10" />
+                  <!-- След от лыж внутри -->
+                  <path d="M14 32h10" stroke-dasharray="4 4" />
+                </g>
+                <g stroke="#fece1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Правая петля (Лыжероллер) -->
+                  <path d="M32 32c6-10 16-10 20-4s2 14-6 14-12-6-14-10" />
+                </g>
+                <g stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Колесо лыжероллера -->
+                  <circle cx="46" cy="36" r="5" fill="#FFF5F0" />
+                  <path d="M46 31v10M41 36h10" stroke-width="2" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="why-card__title">Круглогодичные тренировки</h3>
+            <p class="why-card__text">Летом — лыжероллеры и кроссы, зимой — лыжи. Никаких простоев в сезоне.</p>
+          </div>
+          <div class="why-card">
+            <div class="usp-icon">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                style="width: 100%; height: auto;">
+                <g stroke="#fece1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Лыжа в станке -->
+                  <path d="M8 34h40c6 0 10-4 12-10" />
+                  <!-- Основание станка -->
+                  <path d="M18 54h28" />
+                </g>
+                <g stroke="#FF6B35" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <!-- Тиски (зажим) -->
+                  <path d="M24 54V38h16v16" />
+                  <path d="M20 38h24" />
+                  <!-- Верхний фиксатор -->
+                  <path d="M28 34v-6h8v6" />
+                </g>
+              </svg>
+            </div>
+            <h3 class="why-card__title">Своя база и прокат</h3>
+            <p class="why-card__text">База 24/7 на УСБ «Динамо»: wax-комната, тренажёрный зал, душевые и зона отдыха.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= QUOTE ================= -->
+    <section class="quote">
+      <div class="container">
+        <blockquote class="quote__text">
+          «Вливайся в самое большое лыжное сообщество Урала»
+        </blockquote>
+        <p class="quote__author">— Спортивный клуб GroSport</p>
+      </div>
+    </section>
+
+    <!-- ================= FORM ================= -->
+    <section class="section form-section" id="form">
+      <div class="container form-section__inner">
+        <div class="form-section__info">
+          <span class="section__eyebrow">Заявка</span>
+          <h2 class="section__title">Оставьте заявку<br>на <span class="accent">обратный звонок</span></h2>
+          <p class="form-section__text">Мы свяжемся с вами в ближайшее время, подберём программу тренировок и ответим на
+            все вопросы.</p>
+          <div class="form-section__contacts">
+            <a href="tel:+79221810881" class="form-section__contact">
+              <span class="form-section__contact-label">Телефон</span>
+              <span class="form-section__contact-value">+7 (922) 181-08-81</span>
+            </a>
+            <div class="form-section__contact">
+              <span class="form-section__contact-label">Адрес</span>
+              <span class="form-section__contact-value">Екатеринбург, Московский тракт 12 км, 2</span>
+            </div>
+            <div class="form-section__contact">
+              <span class="form-section__contact-label">Режим работы</span>
+              <span class="form-section__contact-value">Ежедневно с 9:00 до 20:00</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="form" id="leadForm" novalidate>
+          <div class="form__honeypot" aria-hidden="true" hidden>
+            <input type="text" name="website" id="website" tabindex="-1" autocomplete="off">
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="name">Ваше имя</label>
+            <input class="form__input" type="text" id="name" name="name" placeholder="Как к вам обращаться" required>
+            <span class="form__error">Пожалуйста, введите имя</span>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="phone">Телефон</label>
+            <input class="form__input" type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            <span class="form__error">Введите корректный номер телефона</span>
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="direction">Интересующее направление</label>
+            <select class="form__input form__select" id="direction" name="direction">
+              <option value="Лыжная школа">Лыжная школа</option>
+              <option value="Марафонская команда">Марафонская команда</option>
+              <option value="Лыжный сервис">Лыжный сервис</option>
+              <option value="Соревнования">Соревнования</option>
+              <option value="Спортивные сборы">Спортивные сборы</option>
+              <option value="Прокат лыж">Прокат лыж</option>
+              <option value="Магазин">Магазин</option>
+            </select>
+          </div>
+          <label class="form__agree">
+            <input type="checkbox" id="agree" checked>
+            <span>Я соглашаюсь с <a href="#" class="form__link">политикой конфиденциальности</a></span>
+          </label>
+          <button type="submit" class="btn btn--accent btn--lg btn--block">Отправить заявку</button>
+          <p class="form__success" id="formSuccess" hidden>Данные успешно отправлены. Спасибо! Мы свяжемся с вами в
+            ближайшее время.</p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer" id="contacts">
+    <div class="container footer__inner">
+      <div class="footer__col footer__col--brand">
+        <img src="images/logo_ural_ski_club-black_bg.png" alt="GroSport" class="footer__logo" width="140" height="48">
+        <p class="footer__about">АНО Спортивный клуб «ГроСпорт». Лыжное сообщество Урала: марафонская команда, лыжная
+          школа, сервис, соревнования, сборы, прокат и магазин.</p>
+        <div class="footer__social">
+          <a href="https://vk.com/grosport" class="footer__social-link" target="_blank" rel="noopener"
+            aria-label="ВКонтакте">VK</a>
+          <a href="https://www.instagram.com/grosport/" class="footer__social-link" target="_blank" rel="noopener"
+            aria-label="Instagram">IG</a>
+          <a href="https://t.me/grosport" class="footer__social-link" target="_blank" rel="noopener"
+            aria-label="Telegram">TG</a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Навигация</h3>
+        <ul class="footer__menu">
+          <li><a href="#about">О клубе</a></li>
+          <li><a href="#team">Марафонская команда</a></li>
+          <li><a href="#school">Лыжная школа</a></li>
+          <li><a href="#directions">Направления</a></li>
+
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__menu">
+          <li><a href="tel:+79221810881">+7 (922) 181-08-81</a></li>
+          <li>Екатеринбург,<br>Московский тракт 12 км, 2</li>
+          <li>Ежедневно с 9:00 до 20:00</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Связаться</h3>
+        <p class="footer__text">Задайте любой вопрос — перезвоним в течение рабочего дня.</p>
+        <a href="#form" class="btn btn--accent btn--sm">Записаться</a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>Спортивный клуб GroSport &copy; 2026</p>
+        <p><a href="#form" class="footer__privacy">Политика конфиденциальности</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
