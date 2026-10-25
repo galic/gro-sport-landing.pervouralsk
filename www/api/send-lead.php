@@ -142,7 +142,7 @@ if (!$stored) {
     file_put_contents($storageDir . '/' . $config['json_log_file'], $logLine, FILE_APPEND | LOCK_EX);
 }
 
-$subject = 'Новая заявка с сайта GroSport';
+$subject = 'Новая заявка с сайта GroSport-Первоуральск';
 $html = '<p>Поступила новая заявка:</p>'
     . '<ul>'
     . '<li><b>Имя:</b> ' . htmlspecialchars($name, ENT_QUOTES, 'UTF-8') . '</li>'

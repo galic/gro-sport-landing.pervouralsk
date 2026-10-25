@@ -10,7 +10,7 @@ var remote_server = {
 //console.log(remote_server)
 
 const local_folder_path = './www';
-const detination_folder_path = '/home/c75424/grosport.ru/www';
+const detination_folder_path = '/home/c75424/pervouralsk.grosport.ru/www';
 
 send_folder_using_async_await(local_folder_path, detination_folder_path);
 
