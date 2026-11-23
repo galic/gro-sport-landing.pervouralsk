@@ -230,6 +230,14 @@ p {
   gap: 18px;
 }
 
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  line-height: 1.2;
+}
+
 .header__phone {
   color: var(--white);
   font-weight: 700;
@@ -239,6 +247,95 @@ p {
 
 .header__phone:hover {
   color: var(--yellow);
+}
+
+.header__city {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: inherit;
+  color: var(--gray);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.25s var(--ease);
+}
+
+.header__city:hover,
+.city-select.open .header__city {
+  color: var(--yellow);
+}
+
+.header__city svg {
+  width: 10px;
+  height: 6px;
+  transition: transform 0.25s var(--ease);
+}
+
+.city-select.open .header__city svg {
+  transform: rotate(180deg);
+}
+
+.city-select {
+  position: relative;
+}
+
+.city-select__list {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: -14px;
+  min-width: 176px;
+  padding: 6px;
+  background: var(--dark-2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-6px);
+  transition: opacity 0.2s ease, transform 0.2s var(--ease), visibility 0.2s;
+  z-index: 1001;
+}
+
+.city-select.open .city-select__list {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.city-select__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: 6px;
+  color: var(--gray-light);
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.city-select__item:hover {
+  background: rgba(254, 206, 26, 0.1);
+  color: var(--yellow);
+}
+
+.city-select__item.is-current {
+  color: var(--yellow);
+}
+
+.city-select__item.is-current::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  margin-left: auto;
+  border-radius: 50%;
+  background: var(--yellow);
 }
 
 .header__cta {
@@ -629,6 +726,122 @@ p {
 
 .direction-card--highlight .btn {
   align-self: flex-start;
+}
+
+/* ==========================================================================
+   TRAINERS
+   ========================================================================== */
+.trainers {
+  background: var(--dark);
+  background-image: radial-gradient(ellipse 70% 50% at 80% 0%, rgba(254, 206, 26, 0.06), transparent);
+}
+
+.trainers__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.trainer-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--dark-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainer-card:hover {
+  border-color: var(--yellow);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow);
+}
+
+.trainer-card__photo {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--black);
+}
+
+.trainer-card__photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 60%, rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+
+.trainer-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 16%;
+  transition: transform 0.6s var(--ease);
+}
+
+.trainer-card:hover .trainer-card__photo img {
+  transform: scale(1.05);
+}
+
+.trainer-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px 22px 26px;
+}
+
+.trainer-card__name {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.trainer-card__role {
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--yellow);
+  margin-bottom: 18px;
+}
+
+.trainer-card__list {
+  display: grid;
+  gap: 8px;
+  flex: 1;
+  margin: 0 0 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.trainer-card__list li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--gray);
+}
+
+.trainer-card__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--yellow);
+}
+
+.trainer-card__link {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--yellow);
+}
+
+.trainer-card__link:hover {
+  color: var(--yellow-dark);
 }
 
 /* ==========================================================================
@@ -1220,7 +1433,16 @@ p {
    RESPONSIVE
    ========================================================================== */
 @media (max-width: 1100px) {
+  .nav__link {
+    padding: 10px 10px;
+    font-size: 14px;
+  }
+
   .directions__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trainers__grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1261,10 +1483,6 @@ p {
 
   .burger {
     display: flex;
-  }
-
-  .header__phone {
-    display: none;
   }
 
   .about__grid {
@@ -1314,6 +1532,10 @@ p {
   }
 
   .directions__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trainers__grid {
     grid-template-columns: 1fr;
   }
 

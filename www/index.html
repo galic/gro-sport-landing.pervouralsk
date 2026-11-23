@@ -30,12 +30,31 @@
         <a href="#team" class="nav__link">Команда</a>
         <a href="#school" class="nav__link">Лыжная школа</a>
         <a href="#directions" class="nav__link">Направления</a>
-
+        <a href="#trainers" class="nav__link">Тренеры</a>
         <a href="#contacts" class="nav__link">Контакты</a>
       </nav>
 
       <div class="header__actions">
-        <a href="tel:+79221810881" class="header__phone">+7 (922) 181-08-81</a>
+        <div class="header__contacts">
+          <a href="tel:+79221810881" class="header__phone">+7 (922) 181-08-81</a>
+
+          <div class="city-select" id="citySelect">
+            <button type="button" class="header__city" id="citySelectToggle" aria-haspopup="listbox"
+              aria-expanded="false" aria-controls="citySelectList" title="Выбрать филиал">
+              <span>Первоуральск</span>
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true">
+                <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+
+            <div class="city-select__list" id="citySelectList" role="listbox" aria-label="Выбор филиала">
+              <a href="https://grosport.ru" class="city-select__item" role="option" rel="noopener" aria-selected="false" title="перейти на сайт головного филиала в Екатеринбурге">Екатеринбург</a>
+              <a href="#hero" class="city-select__item is-current" role="option" aria-selected="true"
+                >Первоуральск</a>
+            </div>
+          </div>
+        </div>
         <a href="#form" class="btn btn--accent header__cta">Записаться</a>
       </div>
 
@@ -177,7 +196,8 @@
           <div class="about__stats">
             <div class="stat-card">
               <span class="stat-card__num">2</span>
-              <span class="stat-card__label">филиала – Екатеринбург, Первоуральск</span>
+              <span class="stat-card__label">филиала – <a href="https://grosport.ru">Екатеринбург</a>, <a
+                  href="/">Первоуральск</a></span>
             </div>
             <div class="stat-card">
               <span class="stat-card__num">3</span>
@@ -267,8 +287,7 @@
           </article>
 
           <article class="direction-card">
-            <div class="direction-card__icon"><img src="images/prokat.png"
-                alt="Прокат лыж"></div>
+            <div class="direction-card__icon"><img src="images/prokat.png" alt="Прокат лыж"></div>
             <h3 class="direction-card__title">Прокат лыж</h3>
             <p class="direction-card__text">Качественный инвентарь на время тренировки: лыжи, палки, ботинки. Не нужно
               ничего покупать, чтобы начать.</p>
@@ -289,6 +308,92 @@
               клубом и тренерами.</p>
             <a href="#form" class="btn btn--accent btn--sm">Записаться</a>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRAINERS ================= -->
+    <section class="section trainers" id="trainers">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__eyebrow">Лыжная школа</span>
+          <h2 class="section__title">Наши <span class="accent">тренеры</span></h2>
+        </div>
+
+        <div class="trainers__grid">
+          <article class="trainer-card">
+            <div class="trainer-card__photo">
+              <img src="images/trainer1.jpg" alt="Дмитрий Ильин — Тренер группы взрослых"
+                loading="lazy">
+            </div>
+            <div class="trainer-card__body">
+              <h3 class="trainer-card__name">Дмитрий Ильин</h3>
+              <p class="trainer-card__role">Тренер группы взрослых</p>
+              <ul class="trainer-card__list">
+                <li>Высшее педагогическое образование в области физкультуры и спорта УрГПУ</li>
+                <li>Более 20 лет в спорте, призер и участник областных и всероссийских соревнований</li>
+                <li>Сертифицированный тренер по бегу академии rocket sinze</li>
+                <li>Инструктор АФК и ЛФК</li>
+                <li>5 лет преподавательского стажа в области физической культуры и спорта (средняя школа , ДЮСШ). Опыт работы с взрослыми и детьми от 3х лет</li>
+              </ul>
+              <!-- <a href="https://vk.com/artem_rozhin" class="trainer-card__link" target="_blank" rel="noopener">Профиль
+                ВКонтакте &rarr;</a> -->
+            </div>
+          </article>
+
+          <article class="trainer-card">
+            <div class="trainer-card__photo">
+              <img src="images/trainer2.jpg" alt="Валерия Дрыгина — Тренер детской группы" loading="lazy">
+            </div>
+            <div class="trainer-card__body">
+              <h3 class="trainer-card__name">Валерия Дрыгина</h3>
+              <p class="trainer-card__role">Тренер детской группы</p>
+              <ul class="trainer-card__list">
+                <li>Мастер спорта России по лыжным гонкам</li>
+                <li>Победитель и призер Первенства России, победитель и призер Чемпионатов и Первенства Уральского федерального округа, победитель и призер Чемпионатов и Первенства Свердловской области</li>
+                <li>Образование: тренер по лыжному спорту</li>
+              </ul>
+              <!-- <a href="https://vk.ru/zoo_om_ski" class="trainer-card__link" target="_blank" rel="noopener">Профиль
+                ВКонтакте &rarr;</a> -->
+            </div>
+          </article>
+<!-- 
+          <article class="trainer-card">
+            <div class="trainer-card__photo">
+              <img src="images/trainer3.jpg" alt="Елена Давгуль — тренер младшей детской группы" loading="lazy">
+            </div>
+            <div class="trainer-card__body">
+              <h3 class="trainer-card__name">Елена Давгуль</h3>
+              <p class="trainer-card__role">Тренер младшей детской группы</p>
+              <ul class="trainer-card__list">
+                <li>Мастер спорта международного класса</li>
+                <li>Бронзовый призёр всемирной зимней Универсиады</li>
+                <li>Двукратная чемпионка Европы среди юниоров</li>
+                <li>Чемпионка мира по летнему биатлону</li>
+                <li>Мама троих детей</li>
+              </ul>
+              <a href="https://vk.com/id3066096" class="trainer-card__link" target="_blank" rel="noopener">Профиль
+                ВКонтакте &rarr;</a>
+            </div>
+          </article>
+
+          <article class="trainer-card">
+            <div class="trainer-card__photo">
+              <img src="images/trainer4.jpg" alt="Иван Потапов — тренер старшей детской группы" loading="lazy">
+            </div>
+            <div class="trainer-card__body">
+              <h3 class="trainer-card__name">Иван Потапов</h3>
+              <p class="trainer-card__role">Тренер старшей детской группы</p>
+              <ul class="trainer-card__list">
+                <li>Мастер спорта России по лыжным гонкам</li>
+                <li>Тренер высшей категории</li>
+                <li>Победитель и призёр чемпионатов и первенства области</li>
+              </ul>
+              <a href="https://vk.ru/fixvangg" class="trainer-card__link" target="_blank" rel="noopener">Профиль
+                ВКонтакте &rarr;</a>
+            </div>
+          </article> -->
+
         </div>
       </div>
     </section>
@@ -321,12 +426,13 @@
           <div class="benefit">
             <span class="benefit__num">01</span>
             <h3 class="benefit__title">Тренировочный процесс</h3>
-            <p class="benefit__text">Командный чат с поддержкой 24/7, единый тренировочный план, составленный опытным тренером, совместные старты и выезды.</p>
+            <p class="benefit__text">Командный чат с поддержкой 24/7, единый тренировочный план, составленный опытным
+              тренером, совместные старты и выезды.</p>
           </div>
           <div class="benefit">
             <span class="benefit__num">02</span>
             <h3 class="benefit__title">Собственная база</h3>
-            <p class="benefit__text">База на территории УСБ «Динамо» с доступом 24/7: гардеробная, wax-комната, хранение
+            <p class="benefit__text">База с доступом 24/7: гардеробная, wax-комната, хранение
               инвентаря, тренажёрный зал и зона отдыха.</p>
           </div>
           <div class="benefit">
@@ -359,7 +465,8 @@
 
         <div class="prices__grid">
           <article class="price-card">
-            <img src="images/p-intro.jpg" data-summer="images/p-intro.jpg" data-winter="images/p-intro-winter.jpg" alt="Пробная тренировка" class="price-card__img" loading="lazy">
+            <img src="images/p-intro.jpg" data-summer="images/p-intro.jpg" data-winter="images/p-intro-winter.jpg"
+              alt="Пробная тренировка" class="price-card__img" loading="lazy">
             <h3 class="price-card__title">Пробная тренировка</h3>
             <p class="price-card__text">Пробная групповая тренировка — познакомьтесь с клубом и тренерами.</p>
             <div class="price-card__foot">
@@ -369,7 +476,9 @@
           </article>
 
           <article class="price-card">
-            <img src="images/price-month.jpg" data-summer="images/price-month.jpg" data-winter="images/price-month-winter.jpg" alt="Абонемент на 1 месяц" class="price-card__img" loading="lazy">
+            <img src="images/price-month.jpg" data-summer="images/price-month.jpg"
+              data-winter="images/price-month-winter.jpg" alt="Абонемент на 1 месяц" class="price-card__img"
+              loading="lazy">
             <h3 class="price-card__title">Абонемент на 1 месяц</h3>
             <p class="price-card__text">Для тех, кто готов усердно тренироваться.</p>
             <div class="price-card__foot">
@@ -379,7 +488,9 @@
           </article>
 
           <article class="price-card">
-            <img src="images/price-online.jpg" data-summer="images/price-online.jpg" data-winter="images/price-online-winter.jpg" alt="Тренировочный план online" class="price-card__img" loading="lazy">
+            <img src="images/price-online.jpg" data-summer="images/price-online.jpg"
+              data-winter="images/price-online-winter.jpg" alt="Тренировочный план online" class="price-card__img"
+              loading="lazy">
             <h3 class="price-card__title">Тренировочный план online</h3>
             <p class="price-card__text">Персональные ведение спортсмена online, независимо от Вашего
               местонахождения.Наши тренеры подготовят.</p>
@@ -441,7 +552,8 @@
           </article> -->
         </div>
 
-        <a href="https://gro-sport.ru/ski-school" class="school__cta" target="_blank" rel="noopener">Посмотреть все абонементы</a>
+        <a href="https://gro-sport.ru/ski-school" class="school__cta" target="_blank" rel="noopener">Посмотреть все
+          абонементы</a>
       </div>
     </section>
 
@@ -566,7 +678,8 @@
               </svg>
             </div>
             <h3 class="why-card__title">Своя база и прокат</h3>
-            <p class="why-card__text">База 24/7 на УСБ «Динамо»: wax-комната, тренажёрный зал, душевые и зона отдыха.</p>
+            <p class="why-card__text">База 24/7 на УСБ «Динамо»: wax-комната, тренажёрный зал, душевые и зона отдыха.
+            </p>
           </div>
         </div>
       </div>
