@@ -994,6 +994,12 @@ p {
   padding: 18px 20px 0;
 }
 
+.price-card__subtitle {
+  font-size: 14px;
+  padding: 18px 20px 0;
+  color: var(--yellow);
+}
+
 .price-card__text {
   font-size: 13.5px;
   color: var(--gray);
