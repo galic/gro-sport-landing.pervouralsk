@@ -737,14 +737,17 @@ p {
 }
 
 .trainers__grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 18px;
 }
 
 .trainer-card {
   display: flex;
   flex-direction: column;
+  flex: 1 1 260px;
+  max-width: 320px;
   background: var(--dark-2);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -1442,10 +1445,6 @@ p {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .trainers__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .prices__grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -1536,7 +1535,14 @@ p {
   }
 
   .trainers__grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trainer-card {
+    flex-basis: auto;
+    width: 100%;
+    max-width: 100%;
   }
 
   .prices__grid {
